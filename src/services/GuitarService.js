@@ -2,9 +2,9 @@ const baseURL = "/api/guitars/"
 
   const GuitarsService = {
     getGuitars() {
-      return fetch(baseURL)
+      return fetch(baseURL,)
       .then(res => res.json())
-      .then(res => console.log(res))
+      .then(res => console.log(res.json()))
     },
 
     postGuitars(payload) {
@@ -14,6 +14,8 @@ const baseURL = "/api/guitars/"
           headers: { 'Content-Type': 'application/json','Access-Control-Allow-Origin': '*' }
         })
       .then(res => res.json())
+      .then(res => console.log(res.json()))
+
     }
 
 

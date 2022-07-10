@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import react,{Component}  from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route, 
+  Routes,
+  Link
+} from "react-router-dom";
+import './components/css/nav-bar.css';
+import { AllGuiters } from "./components/allGuiters";
+import { AllManufactures } from "./components/AllManufactures";
+import { HomePage } from "./components/HomePage";
+import { TitlePage } from "./components/TitlePage";
+import { ManufacturersContainer } from "./containers/manufacturersContainer";
+import { GuitarsContainer } from "./containers/guitarsContainer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+class App extends Component {
+  
+  render(){
+    return (
+    <Router>
+      <Routes>
+         <Route path="/" element={<TitlePage/>} exact/>
+         <Route path="/homePage" element={<HomePage/>} exact/>
+         <Route path="/manufactures" element={<ManufacturersContainer/>} exact/>
+         <Route path="/guitars" element={<GuitarsContainer/>} exact/>
+
+      </Routes>
+    </Router>
   );
 }
+};
 
 export default App;
+
+

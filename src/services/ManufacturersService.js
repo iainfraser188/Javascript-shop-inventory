@@ -14,7 +14,7 @@ const baseURL = "http://localhost:3000/api/manufacturers/"
           headers: { 'Content-Type': 'application/json','Access-Control-Allow-Origin': '*' }
         })
       .then(res => res.json())
-      .then(res => console.log(res.json()))
+      // .then(res => console.log(res.json()))
     }
 
 

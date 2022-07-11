@@ -14,8 +14,11 @@ export const TitlePage = () => {
     return (
         <>
         <div className='title-page'>
-            <button className='title-button' onClick={handleButtonClick}>The G String</button>
+            <h3 className='instructions'>click title to enter</h3>
+
+            <button className='title-button' onClick={handleButtonClick}>Guitar Shop</button>
         </div>
+       
         </>
     )
 }

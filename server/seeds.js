@@ -2,7 +2,7 @@ use guitar_shop;
 db.dropDatabase();
 
 
-db.manufactaurers.insertMany ([
+db.manufacturers.insertMany ([
     {
       name: "Gibson",
       location: "Los Angeles",

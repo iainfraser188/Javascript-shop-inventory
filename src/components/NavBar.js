@@ -10,7 +10,7 @@ export const NavBar = () => {
         <div>
             <h1 className='title' onClick={()=>{
                 goTo("/")
-            }}>The G String</h1>
+            }}>guitar shop</h1>
         </div>
         <div className='nav-bar-buttons'>
             <h1 onClick={() => {

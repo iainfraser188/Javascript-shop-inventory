@@ -5,9 +5,10 @@ import { SingleGuitar } from './SingleGuitar'
 export const AllGuiters = ({guitars}) => {
     
     const guitarItem=guitars.map(guitar=>{
+
         return(
             <div>
-                <SingleGuitar guitar={guitar} key={guitar._id}/>
+                <SingleGuitar guitar={guitar} key={guitar.id}/>
             </div>
         )
     })
@@ -22,4 +23,4 @@ export const AllGuiters = ({guitars}) => {
         </div>
         </>
     )
-}
+};

@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavBar } from './NavBar'
-import { SingleManufacturer } from './SingleManufacturer.js.js';
+import { SingleManufacturer } from './SingleManufacturer.js';
 
 export const AllManufactures = ({manufacturers}) => {
     const manufacturerItem=manufacturers.map(manufacturer=>{

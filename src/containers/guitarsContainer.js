@@ -8,8 +8,8 @@ export const GuitarsContainer = () => {
 
     useEffect(()=>{
         GuitarsService.getGuitars()
-        .then(guitars => setGuitars(guitars))
-        .then(console.log(guitars))
+        .then((guitars) => setGuitars(guitars))
+        // .then(console.log(guitars))
     })
     return (
         <div>

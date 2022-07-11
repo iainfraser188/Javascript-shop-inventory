@@ -1,4 +1,4 @@
-const baseURL = "/api/manufacturers/"
+const baseURL = "http://localhost:3000/api/manufacturers/"
 
   const ManufacturersService = {
     getManufacturers() {

@@ -3,10 +3,8 @@ const baseURL = "http://localhost:3000/api/guitars/"
   const GuitarsService = {
     getGuitars() {
       return fetch(baseURL)
-      // .then(res => console.log(res.json()))
-
       .then(res => res.json())
-
+      
     },
 
     postGuitars(payload) {

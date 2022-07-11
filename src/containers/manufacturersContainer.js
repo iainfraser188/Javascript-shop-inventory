@@ -8,11 +8,11 @@ export const ManufacturersContainer = () => {
     useEffect(() => {
         ManufacturersService.getManufacturers()
         .then(manufacturers => setManufacturers(manufacturers))
-    }, [])
+        
+    })
 
     return (
         <div>
-            {/* <h1> welcome to the manufacturers page</h1> */}
             <AllManufactures manufacturers={manufacturers}/>
         </div>
     )

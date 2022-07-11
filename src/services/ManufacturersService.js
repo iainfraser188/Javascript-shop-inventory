@@ -4,7 +4,7 @@ const baseURL = "http://localhost:3000/api/manufacturers/"
     getManufacturers() {
       return fetch(baseURL)
       .then(res => res.json())
-      .then(res => console.log(res))
+      // .then(res => console.log(res))
     },
 
     postManufacturers(payload) {

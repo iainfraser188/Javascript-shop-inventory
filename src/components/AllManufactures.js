@@ -17,7 +17,7 @@ export const AllManufactures = ({manufacturers}) => {
             </div>
           <div>
               {manufacturerItem}
-             {<h1>All Manufacturers go here</h1>}
+             {/* {<h1>All Manufacturers go here</h1>} */}
           </div>
           </>
         )

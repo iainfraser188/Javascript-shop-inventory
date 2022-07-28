@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { AllGuiters } from '../components/allGuiters'
+import { AllGuiters } from '../components/AllGuiters'
 import GuitarsService from '../services/GuitarService'
 
 

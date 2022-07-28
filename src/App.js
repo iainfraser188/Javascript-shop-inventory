@@ -7,7 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import './components/css/nav-bar.css';
-import { AllGuiters } from "./components/allGuiters";
+import { AllGuiters } from "./components/AllGuiters";
 import { AllManufactures } from "./components/AllManufactures";
 import { HomePage } from "./components/HomePage";
 import { TitlePage } from "./components/TitlePage";

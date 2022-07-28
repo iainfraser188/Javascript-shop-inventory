@@ -1,9 +1,14 @@
 import React from 'react'
 import { NavBar } from './NavBar'
 import { SingleGuitar } from './SingleGuitar'
+import { useNavigate } from 'react-router-dom'
+
+import './css/Guitars.css'
 
 export const AllGuiters = ({guitars}) => {
     
+    let goTo= useNavigate();
+
     const guitarItem=guitars.map(guitar=>{
 
         return(
@@ -17,8 +22,11 @@ export const AllGuiters = ({guitars}) => {
         <div>
             <NavBar/>
         </div>
+        <div>
+            <button onClick={() => {
+                    goTo("/addGuitar")}}>Add Guitar</button>
+        </div>
         <div className='all-guitars-page'>
-            <h1>all guitars go here</h1>
             {guitarItem}
         </div>
         </>

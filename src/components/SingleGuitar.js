@@ -1,8 +1,9 @@
 import React from 'react'
+import './css/Guitars.css'
 
 export const SingleGuitar = ({guitar}) => {
     return (
-        <div>
+        <div className="single-guitar">
             <h1>{guitar.name}</h1>
             <details>
                 <summary>

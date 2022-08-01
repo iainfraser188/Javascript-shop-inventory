@@ -1,0 +1,10 @@
+.manufacturer-page{
+    display: grid;
+    align-items: center;
+    background-color: white;
+    margin-left:40%;
+    padding:2em;
+    border-bottom: 2em;
+    border-color: blue;
+    
+}

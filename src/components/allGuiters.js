@@ -22,9 +22,9 @@ export const AllGuiters = ({guitars}) => {
         <div>
             <NavBar/>
         </div>
-        <div>
-            <button onClick={() => {
-                    goTo("/addGuitar")}}>Add Guitar</button>
+        <div className='formButton'>
+            <button className='addGuitarButton' onClick={() => {
+                    goTo("/guitarForm")}}>Add Guitar</button>
         </div>
         <div className='all-guitars-page'>
             {guitarItem}

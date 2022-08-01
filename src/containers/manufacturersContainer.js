@@ -7,6 +7,7 @@ export const ManufacturersContainer = () => {
 
     useEffect(() => {
         ManufacturersService.getManufacturers()
+        
         .then(manufacturers => setManufacturers(manufacturers))
         
     })

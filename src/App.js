@@ -1,14 +1,10 @@
-import react,{Component}  from "react";
+import {Component}  from "react";
 import {
   BrowserRouter as Router,
-  Switch,
   Route, 
-  Routes,
-  Link
-} from "react-router-dom";
+  Routes} from "react-router-dom";
 import './components/css/nav-bar.css';
-import { AllGuiters } from "./components/AllGuiters";
-import { AllManufactures } from "./components/AllManufactures";
+import { GuitarForm } from "./components/GuitarForm";
 import { HomePage } from "./components/HomePage";
 import { TitlePage } from "./components/TitlePage";
 import { ManufacturersContainer } from "./containers/manufacturersContainer";
@@ -24,6 +20,8 @@ class App extends Component {
          <Route path="/homePage" element={<HomePage/>} exact/>
          <Route path="/manufactures" element={<ManufacturersContainer/>} exact/>
          <Route path="/guitars" element={<GuitarsContainer/>} exact/>
+         <Route path="/guitarForm" element={<GuitarForm/>} exact/>
+
 
       </Routes>
     </Router>

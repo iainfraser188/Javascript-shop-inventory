@@ -1,0 +1,9 @@
+.form{
+    display: grid;
+    justify-content: center;
+    padding: 2em;
+}
+
+.submit{
+    margin:2em;
+}

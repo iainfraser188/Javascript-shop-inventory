@@ -27,24 +27,24 @@ db.manufacturers.insertMany ([
           type:"electric",
           strings:"6",
           manufacturer:"Gibson",
-          stockPrice:"£300",
-          retailPrice:"£550"
+          stockPrice:300,
+          retailPrice:550,
       },
       {
         name:"Telecaster",
         type:"electric",
         strings:"6",
         manufacturer:"Fender",
-        stockPrice:"£250",
-        retailPrice:"£500"
+        stockPrice:250,
+        retailPrice:500
     },
     {
         name:"Academy",
         type:"acoustic",
         strings:"6",
         manufacturer:"Taylor",
-        stockPrice:"£200",
-        retailPrice:"£450"
+        stockPrice:200,
+        retailPrice:450
     }
   ]);
 

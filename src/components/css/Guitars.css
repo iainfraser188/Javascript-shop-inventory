@@ -1,13 +1,15 @@
-.All-Guitars-Page{
+/* .All-Guitars-Page{
     display: flex;
     align-items: center;
     margin:0%;
     height:100%;
-}
+} */
 .single-guitar{
+    display: flex;
+    align-items: center;
     background-color: white;
-    margin:0em;
-    padding:2em;
+    margin-left:30%;
+    padding:1em;
     border-bottom: 2em;
     border-color: blue;
     
@@ -17,4 +19,11 @@ h1{
 }
 h3 {
     margin:0;
+}
+
+
+.formButton{
+    display:flex;
+    margin-left: 45%;
+    margin-top: 1em;
 }

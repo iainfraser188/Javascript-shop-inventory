@@ -4,6 +4,7 @@ import {
   Route, 
   Routes} from "react-router-dom";
 import './components/css/nav-bar.css';
+import { ManufacturersForm } from "./components/ManufacurersForm";
 import { GuitarForm } from "./components/GuitarForm";
 import { HomePage } from "./components/HomePage";
 import { TitlePage } from "./components/TitlePage";
@@ -21,6 +22,7 @@ class App extends Component {
          <Route path="/manufactures" element={<ManufacturersContainer/>} exact/>
          <Route path="/guitars" element={<GuitarsContainer/>} exact/>
          <Route path="/guitarForm" element={<GuitarForm/>} exact/>
+         <Route path="/manufacturersForm" element={<ManufacturersForm/>} exact/>
 
 
       </Routes>

@@ -2,12 +2,14 @@ import React from 'react'
 import { useState } from 'react';
 import { NavBar } from './NavBar'
 import GuitarsService from '../services/GuitarService';
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './css/Form.css'
 
 
 export const GuitarForm = () => {
 
+        const goTo = useNavigate();
+        const form = document.getElementById('guitarForm')
         const createGuitar = newGuitar => {
         GuitarsService.postGuitars(newGuitar);
         };
@@ -44,6 +46,9 @@ export const GuitarForm = () => {
             setManufacturer("");
             setStockPrice("");
             setRetailPrice("");
+            
+            form.reset();
+            goTo('/guitars');
           }
       
 

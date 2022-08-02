@@ -5,7 +5,7 @@
 
 in the main directory type npm install
 
- cd into server folder
+ cd into server folder and
  type npm run seed.
  this will seed the database
  

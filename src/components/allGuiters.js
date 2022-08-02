@@ -9,14 +9,21 @@ export const AllGuiters = ({guitars}) => {
     
     let goTo= useNavigate();
 
-    const guitarItem=guitars.map(guitar=>{
+    // const guitarItem=guitars.map(guitar=>{
 
-        return(
-            <div>
-                <SingleGuitar guitar={guitar} key={guitar.id}/>
-            </div>
-        )
-    })
+       
+    //     return (
+           
+    //     <td>{guitar.name}</td>
+    //     <td>{guitar.stockPrice}</td>
+    //     <td>{guitar.retailPrice}</td>
+    //     <td>{profit()}</td>
+        
+    
+               
+         
+    //     )
+    // })
     return (
         <>
         <div>
@@ -27,8 +34,43 @@ export const AllGuiters = ({guitars}) => {
                     goTo("/guitarForm")}}>Add Guitar</button>
         </div>
         <div className='all-guitars-page'>
-            {guitarItem}
-        </div>
+    
+        <table >
+            <thead>
+            <tr>
+            <th>Guitar Name</th>
+            <th>Guitar Type</th>
+            <th>Stock Price (£)</th>
+            <th>Retail Price (£)</th>
+            <th>profit (£)</th>
+            </tr>
+            </thead>
+            <tbody>
+                {guitars.map(guitar=>{
+            function profit(){
+                var stock = guitar.stockPrice;
+                var retail = guitar.retailPrice;
+                var profit = retail - stock;
+                return profit;
+            }
+
+            return (
+            <tr>
+            <td>{guitar.name}</td>
+            <td>{guitar.type}</td>
+            <td>{guitar.stockPrice}</td>
+            <td>{guitar.retailPrice}</td>
+            <td>{profit()}</td>
+            </tr>
+
+                
+            
+            )
+            })} </tbody>
+        </table>
+        
+            
+         </div>
         </>
     )
 };

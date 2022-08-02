@@ -12,7 +12,7 @@ in the main directory type npm install
  type npm start 
  this will start the server
  
- in another tab cd into src
+ in another tab cd into src and
  type npm start
  this will open your browser to see the program running
  

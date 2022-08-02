@@ -1,5 +1,21 @@
 # Getting Started with Create React App
 
+
+# how to start
+
+in the main directory type npm install
+
+ cd into server folder
+ type npm run seed.
+ this will seed the database
+ 
+ type npm start 
+ this will start the server
+ 
+ in another tab cd into src
+ type npm start
+ this will open your browser to see the program running
+ 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
